@@ -1,0 +1,24 @@
+{
+  "name": "traversy-typescript",
+  "version": "1.0.0",
+  "description": "1. Install typescript globally with `sudo npm i -g typescript` 2. You can verify that it is properly installed with `tsc --version` 3. Compile your typescript file with `tsc app.ts`     1. Optionally, you can set typescript to watch the file with `tsc app.ts -w` 4. Create a config file automatically with `tsc --init`     1. This will create a json file with several options         1. For example, by default the target is es5 and you can change that with the `target` json option         2. Set the `outputDir` value to `./dist`         3. Set the `rootDir` value to `./src`         4. Set the `moduleResolution` value to `node`     2. With this tsconfig.json file, you can now just type `tsc`",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/app.js",
+    "dev": "nodemon src/app.ts",
+    "build": "tsc -p ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/node": "^12.12.7",
+    "nodemon": "^1.19.4",
+    "ts-node": "^8.5.0",
+    "typescript": "^3.7.2"
+  }
+}
